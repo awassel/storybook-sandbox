@@ -1,0 +1,25 @@
+{
+  "extends": [ "stylelint-config-sass-guidelines", "stylelint-prettier/recommended" ],
+  "rules": {
+    "at-rule-no-vendor-prefix": true,
+    "at-rule-semicolon-space-before": "never",
+    "block-closing-brace-empty-line-before": "never",
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "length-zero-no-unit": true,
+    "max-nesting-depth": 4,
+    "prettier/prettier": true,
+    "scss/dollar-variable-pattern": [ "^[_]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$",
+      {
+        "ignore": "global"
+      }
+    ],
+    "selector-max-compound-selectors": 5,
+    "selector-no-qualifying-type": [ false,
+      {
+        "ignore": [ "attribute" ]
+      }
+    ],
+    "string-quotes": "single"
+  }
+}

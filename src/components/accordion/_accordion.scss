@@ -1,0 +1,27 @@
+.accordion {
+  list-style: none;
+  max-width: 100%;
+  padding-left: 0;
+
+  &-item {
+    overflow: visible;
+
+    &-heading {
+      background-color: transparent;
+      display: block;
+      padding: 10px 0;
+      text-align: left;
+      width: 100%;
+    }
+
+    &-content {
+      display: none;
+    }
+
+    &--active {
+      .accordion-item-content {
+        display: block;
+      }
+    }
+  }
+}

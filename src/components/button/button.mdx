@@ -1,0 +1,41 @@
+import { Story, Props, Source, Preview } from '@storybook/addon-docs/blocks';
+
+# Button
+
+- [Overview](#overview)
+- [Types](#types)
+
+Buttons are clickable elements that are used to trigger actions. They communicate calls to action to the user and allow users to interact with pages in a variety of ways. Button labels express what action will occur when the user interacts with it.
+
+## Overview
+
+Buttons are clickable elements that are used to trigger actions. They
+communicate calls to action to the user and allow users to interact with pages
+in a variety of ways. `Button` labels express what action will occur when the
+user interacts with it.
+
+<Preview withSource="open">
+  <Story id="components-button--primary" />
+  <Story id="components-button--secondary" />
+  <Story id="components-button--tertiary" />
+  <Story id="components-button--danger" />
+  <Story id="components-button--ghost" />
+</Preview>
+
+## Types
+
+| Type        | Purpose                                                                                                                                                       |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _Primary_   | For the principal call to action on the page. Primary buttons should only appear once per screen (not including the application header or in a modal dialog). |
+| _Secondary_ | For secondary actions on each page; these can only be used  in conjunction with a primary button.                                                             |
+| _Tertiary_  | For less prominent actions; tertiary buttons can be used in isolation  or paired with a primary button when there are multiple calls to action.               |
+| _Danger_    | For actions that could have destructive effects on the user’s data  (delete, remove, etc.).                                                                   |
+| _Ghost_     | For the least pronounced actions; often used in conjunction with a primary button.                                                                            |
+
+### When to use
+
+Use buttons to communicate actions users can take and to allow users to interact with the page. Each page should have one primary button, and any remaining calls to action should be represented as lower emphasis buttons.
+
+### When not to use
+
+Do not use buttons as navigational elements. Instead, use links when the desired action is to take the user to a new page.

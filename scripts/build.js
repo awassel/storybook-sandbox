@@ -1,0 +1,27 @@
+const clean = require('./clean/index');
+const prettier = require('./prettier/index');
+const scss = require('./scss/index');
+const html = require('./html/config');
+const css = require('./css/index');
+const rollupClean = require('./rollup/clean');
+const rollup = require('./rollup/dev');
+const rollupMin = require('./rollup/prod');
+const babelClean = require('./babel/clean');
+const es = require('./babel/es');
+const umd = require('./babel/umd');
+const webpackClean = require('./webpack/clean');
+const webpack = require('./webpack/config');
+
+clean.run();
+prettier.run();
+scss.copy();
+html.copy();
+css.run();
+rollupClean.run();
+rollup.compile();
+rollupMin.compile();
+babelClean.run();
+es.compile();
+umd.compile();
+webpackClean.run();
+webpack.compile();
