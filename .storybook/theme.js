@@ -8,7 +8,7 @@ export default create({
   fontCode: 'monospace',
 
   // Brand logo/text
-  brandTitle: 'Rightpoint FED/UI',
+  brandTitle: 'Rightpoint UI Components',
   brandUrl: 'http://www.rightpoint.com/',
-  brandImage: '/images/logo.svg',
+  brandImage: 'images/logo.svg',
 });
