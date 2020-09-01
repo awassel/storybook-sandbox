@@ -1,5 +1,5 @@
 {
-  "name": "@rp-ui/cms-boilerplate",
+  "name": "@awassel/storybook-sandbox",
   "version": "1.0.0",
   "description": "TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.",
   "module": "dist/es/globals/js/index.js",
@@ -17,12 +17,13 @@
     "build:scripts": "node ./scripts/scripts.js",
     "build-storybook": "build-storybook -s ./static  -o ./dist/storybook",
     "clean": "node ./scripts/clean.js",
+    "deploy-storybook": "storybook-to-ghpages",
     "dev": "npm run storybook",
     "prebuild": "npm run prettier",
     "prettier": "prettier --write \"**/*.{scss,css,js}\"",
     "start": "npm run storybook",
     "storybook": "start-storybook -s ./static -p 6006",
-    "storybook:deploy": "storybook-to-ghpages"
+    "storybook:deploy": "npm run build-storybook && npm run deploy-storybook -- --out=./dist/storybook"
   },
   "repository": {
     "type": "git",
